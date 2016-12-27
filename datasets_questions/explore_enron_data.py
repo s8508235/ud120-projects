@@ -38,8 +38,9 @@ names = ['SKILLING JEFFREY K', 'FASTOW ANDREW S', 'LAY KENNETH L']
 names_payments = {name:enron_data[name]['total_payments'] for name in names}
 print names_payments
 '''
-cnt=0
+cnt=0.0
 for i in enron_data.values():
-    if(i['email_address']!='NaN'):
-        cnt+=1
-print cnt
+    #if(i['poi']=='NaN'):
+    #    cnt+=1
+    print i
+print cnt/(len(enron_data))
